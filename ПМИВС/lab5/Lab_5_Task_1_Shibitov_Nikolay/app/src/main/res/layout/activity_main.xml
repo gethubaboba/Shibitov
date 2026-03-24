@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:text="Распознавание жестов"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="12dp"
+        android:text="Выполняйте жесты в серой области ниже"
+        android:textSize="14sp" />
+
+    <!-- Выделенная область для жестов -->
+    <View
+        android:id="@+id/gestureArea"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#EEEEEE"
+        android:contentDescription="Область для жестов" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Очистить" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:background="#F9F9F9"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/tvOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:hint="Жесты появятся здесь..."
+            android:textSize="15sp" />
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Calculator16 + Gestures</string>
+    <string name="convert">Convert</string>
+    <string name="error_invalid">Invalid input</string>
+    <string name="error_div_zero">Impossible</string>
+    <string name="from_label">From:</string>
+    <string name="to_label">To:</string>
+    <string name="lang_label">RU</string>
+    <string name="gesture_hint">Draw gesture: 0–9, dot, clear, backspace, equals, plus_minus</string>
+    <string name="gesture_mode_on">Gesture mode: ON</string>
+    <string name="gesture_mode_off">Gesture mode: OFF</string>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Калькулятор16 + Жесты</string>
+    <string name="convert">Перевести</string>
+    <string name="error_invalid">Ошибка ввода</string>
+    <string name="error_div_zero">Недопустимо</string>
+    <string name="from_label">Из:</string>
+    <string name="to_label">В:</string>
+    <string name="lang_label">EN</string>
+    <string name="gesture_hint">Жест: 0–9, dot, clear, backspace, equals, plus_minus</string>
+    <string name="gesture_mode_on">Жесты: ВКЛ</string>
+    <string name="gesture_mode_off">Жесты: ВЫКЛ</string>
+</resources>

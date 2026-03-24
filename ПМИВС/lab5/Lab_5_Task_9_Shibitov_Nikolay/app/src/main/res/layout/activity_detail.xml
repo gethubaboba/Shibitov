@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <!-- City name -->
+        <TextView
+            android:id="@+id/tvCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"
+            android:text="—" />
+
+        <!-- Temperature -->
+        <TextView
+            android:id="@+id/tvTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="52sp"
+            android:textColor="#1565C0"
+            android:textStyle="bold"
+            android:text="..." />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Detailed info -->
+        <TextView
+            android:id="@+id/tvFeelsLike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:paddingBottom="6dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tvHumidity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:paddingBottom="6dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tvPressure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:paddingBottom="6dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tvWind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:paddingBottom="6dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tvVisibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:paddingBottom="16dp"
+            android:text="" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Forecast header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Прогноз (до 7 дней)"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <!-- Forecast rows added dynamically -->
+        <LinearLayout
+            android:id="@+id/forecastContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+</ScrollView>

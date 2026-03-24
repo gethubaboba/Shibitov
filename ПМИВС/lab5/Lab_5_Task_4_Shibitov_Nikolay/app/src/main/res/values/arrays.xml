@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="metric_units">
+        <item>m²</item>
+        <item>cm²</item>
+        <item>km²</item>
+        <item>ha</item>
+    </string-array>
+    <string-array name="imperial_units">
+        <item>in²</item>
+        <item>ft²</item>
+        <item>yd²</item>
+        <item>acre</item>
+        <item>mi²</item>
+    </string-array>
+</resources>

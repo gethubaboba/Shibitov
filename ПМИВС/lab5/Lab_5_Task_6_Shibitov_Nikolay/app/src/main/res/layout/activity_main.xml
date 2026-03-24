@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="RunTracker"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp"
+        android:text="Остановлено"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <!-- Latitude row -->
+    <TextView
+        android:id="@+id/lblLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="Широта:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvStatus" />
+
+    <TextView
+        android:id="@+id/tvLatitude"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingStart="8dp"
+        android:text="—"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/lblLatitude"
+        app:layout_constraintTop_toBottomOf="@id/tvStatus" />
+
+    <!-- Longitude row -->
+    <TextView
+        android:id="@+id/lblLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="Долгота:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblLatitude" />
+
+    <TextView
+        android:id="@+id/tvLongitude"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingStart="8dp"
+        android:text="—"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/lblLongitude"
+        app:layout_constraintTop_toBottomOf="@id/tvLatitude" />
+
+    <!-- Altitude row -->
+    <TextView
+        android:id="@+id/lblAltitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="Высота:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblLongitude" />
+
+    <TextView
+        android:id="@+id/tvAltitude"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingStart="8dp"
+        android:text="—"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/lblAltitude"
+        app:layout_constraintTop_toBottomOf="@id/tvLongitude" />
+
+    <!-- Accuracy row -->
+    <TextView
+        android:id="@+id/lblAccuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="Точность:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblAltitude" />
+
+    <TextView
+        android:id="@+id/tvAccuracy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingStart="8dp"
+        android:text="—"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/lblAccuracy"
+        app:layout_constraintTop_toBottomOf="@id/tvAltitude" />
+
+    <!-- Speed row -->
+    <TextView
+        android:id="@+id/lblSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="Скорость:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblAccuracy" />
+
+    <TextView
+        android:id="@+id/tvSpeed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingStart="8dp"
+        android:text="—"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/lblSpeed"
+        app:layout_constraintTop_toBottomOf="@id/tvAccuracy" />
+
+    <!-- Provider row -->
+    <TextView
+        android:id="@+id/lblProvider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="Провайдер:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblSpeed" />
+
+    <TextView
+        android:id="@+id/tvProvider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingStart="8dp"
+        android:text="—"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/lblProvider"
+        app:layout_constraintTop_toBottomOf="@id/tvSpeed" />
+
+    <!-- Time row -->
+    <TextView
+        android:id="@+id/lblTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="Время:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblProvider" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingStart="8dp"
+        android:text="—"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/lblTime"
+        app:layout_constraintTop_toBottomOf="@id/tvProvider" />
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Старт"
+        app:layout_constraintEnd_toStartOf="@id/btnStop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblTime" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Стоп"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnStart"
+        app:layout_constraintTop_toBottomOf="@id/lblTime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

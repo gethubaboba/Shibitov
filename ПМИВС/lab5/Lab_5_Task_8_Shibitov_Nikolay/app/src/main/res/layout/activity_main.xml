@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="RunTracker (PendingIntent)"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:paddingBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Остановлено"
+        android:textSize="15sp"
+        android:paddingBottom="8dp" />
+
+    <!-- TableLayout with 5 TableRows (one per data field) -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow android:paddingBottom="6dp">
+            <TextView android:text="Широта:" android:textStyle="bold" android:paddingEnd="12dp" />
+            <TextView android:id="@+id/tvLatitude" android:text="—" />
+        </TableRow>
+
+        <TableRow android:paddingBottom="6dp">
+            <TextView android:text="Долгота:" android:textStyle="bold" android:paddingEnd="12dp" />
+            <TextView android:id="@+id/tvLongitude" android:text="—" />
+        </TableRow>
+
+        <TableRow android:paddingBottom="6dp">
+            <TextView android:text="Высота:" android:textStyle="bold" android:paddingEnd="12dp" />
+            <TextView android:id="@+id/tvAltitude" android:text="—" />
+        </TableRow>
+
+        <TableRow android:paddingBottom="6dp">
+            <TextView android:text="Точность:" android:textStyle="bold" android:paddingEnd="12dp" />
+            <TextView android:id="@+id/tvAccuracy" android:text="—" />
+        </TableRow>
+
+        <TableRow android:paddingBottom="6dp">
+            <TextView android:text="Скорость:" android:textStyle="bold" android:paddingEnd="12dp" />
+            <TextView android:id="@+id/tvSpeed" android:text="—" />
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- Additional fields in a second TableLayout -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_marginTop="4dp">
+
+        <TableRow android:paddingBottom="6dp">
+            <TextView android:text="Провайдер:" android:textStyle="bold" android:paddingEnd="12dp" />
+            <TextView android:id="@+id/tvProvider" android:text="—" />
+        </TableRow>
+
+        <TableRow android:paddingBottom="12dp">
+            <TextView android:text="Время:" android:textStyle="bold" android:paddingEnd="12dp" />
+            <TextView android:id="@+id/tvTime" android:text="—" />
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- LinearLayout with two buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Старт"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Стоп"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

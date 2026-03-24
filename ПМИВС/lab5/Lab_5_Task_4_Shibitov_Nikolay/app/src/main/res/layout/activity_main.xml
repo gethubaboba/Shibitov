@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.gesture.GestureOverlayView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gestureOverlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gestureStrokeType="single"
+    android:eventsInterceptionEnabled="false"
+    android:gestureColor="#400000FF"
+    android:uncertainGestureColor="#20FF0000">
+
+    <!-- Original calculator layout from Lab 2 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <!-- Language toggle -->
+        <Button
+            android:id="@+id/btnLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lang_label"
+            android:textColor="#000000"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:onClick="onLangClick"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnGestureMode" />
+
+        <!-- Gesture mode toggle (new) -->
+        <Button
+            android:id="@+id/btnGestureMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gesture_mode_off"
+            android:textSize="11sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Display -->
+        <TextView
+            android:id="@+id/tvDisplay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#EEEEEE"
+            android:gravity="end"
+            android:padding="16dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="32sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnLang" />
+
+        <!-- Result -->
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:padding="8dp"
+            android:text=""
+            android:textColor="#555555"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDisplay" />
+
+        <!-- Gesture hint label (shown only in gesture mode) -->
+        <TextView
+            android:id="@+id/tvGestureHint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/gesture_hint"
+            android:textSize="11sp"
+            android:textColor="#1E88E5"
+            android:visibility="gone"
+            android:paddingBottom="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvResult" />
+
+        <!-- Unit selection spinners -->
+        <LinearLayout
+            android:id="@+id/unitSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/tvGestureHint">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/from_label"/>
+                <Spinner
+                    android:id="@+id/spinnerFrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/metric_units" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/to_label"/>
+                <Spinner
+                    android:id="@+id/spinnerTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/imperial_units" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Numeric grid (original from Lab 2) -->
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:columnCount="4"
+            android:rowCount="5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/unitSelection">
+
+            <Button android:text="7" android:onClick="onButtonClick" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+            <Button android:text="8" android:onClick="onButtonClick" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+            <Button android:text="9" android:onClick="onButtonClick" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+            <Button android:text="C" android:onClick="onButtonClick" style="@style/Widget.MaterialComponents.Button.TextButton" android:textColor="#FF0000" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+
+            <Button android:text="4" android:onClick="onButtonClick" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+            <Button android:text="5" android:onClick="onButtonClick" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+            <Button android:text="6" android:onClick="onButtonClick" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+            <Button android:text="⌫" android:onClick="onButtonClick" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+
+            <Button android:text="1" android:onClick="onButtonClick" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+            <Button android:text="2" android:onClick="onButtonClick" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+            <Button android:text="3" android:onClick="onButtonClick" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+            <Button android:text="±" android:onClick="onButtonClick" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+
+            <Button android:text="0" android:onClick="onButtonClick" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+            <Button android:text="." android:onClick="onButtonClick" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+            <Button android:text="=" android:onClick="onButtonClick" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="2" android:layout_columnSpan="2" />
+
+        </GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</android.gesture.GestureOverlayView>
