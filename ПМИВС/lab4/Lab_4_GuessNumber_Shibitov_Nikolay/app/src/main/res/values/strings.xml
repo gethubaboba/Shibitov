@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Guess the Number</string>
+    <!-- Hint shown to the user about the valid range -->
+    <string name="hint_range">Guess a number between 1 and 100 (7 attempts)</string>
+    <string name="hint_enter_number">Enter your guess…</string>
+    <string name="btn_guess">Guess</string>
+    <string name="btn_new_game">New Game</string>
+    <!-- Content descriptions for accessibility (TalkBack) -->
+    <string name="cd_guess_input">Guess input field</string>
+    <string name="cd_result">Game result</string>
+    <string name="cd_attempts">Attempts counter</string>
+</resources>

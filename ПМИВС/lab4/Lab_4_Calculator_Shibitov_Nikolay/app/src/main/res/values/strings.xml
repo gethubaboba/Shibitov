@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App name -->
+    <string name="app_name">Calculator</string>
+
+    <!-- Error messages -->
+    <!-- Displayed when the user attempts to divide by zero -->
+    <string name="error_division_by_zero">Error: Division by zero</string>
+
+    <!-- Button labels -->
+    <string name="btn_clear">AC</string>
+    <string name="btn_negate">+/-</string>
+    <string name="btn_percent">%</string>
+    <string name="btn_divide">÷</string>
+    <string name="btn_multiply">×</string>
+    <string name="btn_minus">−</string>
+    <string name="btn_plus">+</string>
+    <string name="btn_dot">.</string>
+    <string name="btn_backspace">⌫</string>
+    <string name="btn_equals">=</string>
+
+    <!-- Content descriptions for accessibility (TalkBack) -->
+    <string name="cd_expression">Expression</string>
+    <string name="cd_result">Result</string>
+</resources>

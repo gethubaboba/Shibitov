@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Фильмотека — Android Room</string>
+    <string name="tab_films">Фильмы</string>
+    <string name="tab_sessions">Сеансы</string>
+    <string name="tab_stats">Статистика</string>
+    <string name="hint_title">Название фильма</string>
+    <string name="hint_director">Режиссёр</string>
+    <string name="hint_year">Год выпуска</string>
+    <string name="hint_genre">Жанр</string>
+    <string name="hint_film_id">ID фильма</string>
+    <string name="hint_date">Дата (дд.мм.гггг)</string>
+    <string name="hint_viewers">Кол-во зрителей</string>
+    <string name="hint_price">Цена билета</string>
+    <string name="btn_add">Добавить</string>
+    <string name="btn_sort_title">Сортировка: название</string>
+    <string name="btn_sort_year">Сортировка: год</string>
+    <string name="btn_filter">Фильтр по году ></string>
+    <string name="btn_group_genre">Группировка по жанру</string>
+    <string name="btn_stats">Обновить статистику</string>
+    <string name="hint_filter_value">Год (от)</string>
+    <string name="msg_fill_required">Заполните обязательные поля</string>
+    <string name="msg_saved">Сохранено</string>
+</resources>

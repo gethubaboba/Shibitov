@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Угадай число — DataStore</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Пароль</string>
+    <string name="btn_login">Войти</string>
+    <string name="btn_logout">Выйти</string>
+    <string name="btn_check">Проверить</string>
+    <string name="hint_guess">Введите число (1–100)</string>
+    <string name="label_attempts">Попыток: </string>
+    <string name="label_best">Лучший результат: </string>
+    <string name="label_launches">Запусков приложения: </string>
+    <string name="msg_too_high">Слишком большое!</string>
+    <string name="msg_too_low">Слишком маленькое!</string>
+    <string name="msg_win">Угадали!</string>
+    <string name="msg_invalid">Введите корректное число</string>
+    <string name="msg_email_empty">Введите email</string>
+    <string name="msg_pass_empty">Введите пароль</string>
+    <string name="welcome">Добро пожаловать, %s</string>
+    <string name="new_game">Новая игра</string>
+</resources>

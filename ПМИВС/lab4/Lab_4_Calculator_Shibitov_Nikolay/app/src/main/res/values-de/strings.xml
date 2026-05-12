@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Taschenrechner</string>
+    <string name="error_division_by_zero">Fehler: Division durch Null</string>
+    <string name="btn_clear">AC</string>
+    <string name="btn_negate">+/-</string>
+    <string name="btn_percent">%</string>
+    <string name="btn_divide">÷</string>
+    <string name="btn_multiply">×</string>
+    <string name="btn_minus">−</string>
+    <string name="btn_plus">+</string>
+    <string name="btn_dot">.</string>
+    <string name="btn_backspace">⌫</string>
+    <string name="btn_equals">=</string>
+    <string name="cd_expression">Ausdruck</string>
+    <string name="cd_result">Ergebnis</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Книги — SQLite Raw</string>
+    <string name="btn_view">Просмотр всех книг</string>
+    <string name="btn_add">Добавить книгу</string>
+    <string name="btn_edit">Изменить запись</string>
+    <string name="hint_author">Автор (ФИО)</string>
+    <string name="hint_title">Название книги</string>
+    <string name="hint_year">Год издания</string>
+    <string name="btn_save">Сохранить</string>
+    <string name="btn_back">Назад</string>
+    <string name="msg_saved">Запись сохранена</string>
+    <string name="msg_updated">Запись обновлена</string>
+    <string name="msg_fill_all">Заполните все поля</string>
+    <string name="db_init_done">БД инициализирована: 5 записей загружено</string>
+</resources>

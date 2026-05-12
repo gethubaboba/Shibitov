@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Книги — SQLite Upgrade (v2)</string>
+    <string name="btn_view">Просмотр всех книг</string>
+    <string name="btn_add">Добавить книгу</string>
+    <string name="btn_edit">Изменить запись</string>
+    <string name="hint_author">Автор (ФИО)</string>
+    <string name="hint_title">Название книги</string>
+    <string name="hint_year">Год издания</string>
+    <string name="hint_publisher">Издательство (char)</string>
+    <string name="hint_pages">Количество страниц (integer)</string>
+    <string name="hint_price">Стоимость (integer)</string>
+    <string name="btn_save">Сохранить</string>
+    <string name="btn_back">Назад</string>
+    <string name="msg_saved">Запись сохранена</string>
+    <string name="msg_updated">Запись обновлена</string>
+    <string name="msg_fill_all">Заполните все обязательные поля</string>
+    <string name="db_init_done">БД v2 инициализирована. Добавлены поля: Издательство, Кол-во страниц, Стоимость</string>
+</resources>

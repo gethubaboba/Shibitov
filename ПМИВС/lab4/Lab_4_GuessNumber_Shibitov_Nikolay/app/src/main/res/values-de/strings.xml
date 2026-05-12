@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zahl raten</string>
+    <string name="hint_range">Rate eine Zahl zwischen 1 und 100 (7 Versuche)</string>
+    <string name="hint_enter_number">Eingabe…</string>
+    <string name="btn_guess">Raten</string>
+    <string name="btn_new_game">Neues Spiel</string>
+    <string name="cd_guess_input">Eingabefeld für Schätzung</string>
+    <string name="cd_result">Spielergebnis</string>
+    <string name="cd_attempts">Versuchszähler</string>
+</resources>
