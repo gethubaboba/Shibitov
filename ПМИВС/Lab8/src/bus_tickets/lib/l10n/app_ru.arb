@@ -1,0 +1,79 @@
+{
+  "@@locale": "ru",
+  "appTitle": "Автобус Гродно",
+  "cities": "Города",
+  "routes": "Маршруты",
+  "myTickets": "Мои билеты",
+  "weather": "Погода",
+  "book": "Забронировать",
+  "cancel": "Отмена",
+  "confirm": "Подтвердить",
+  "back": "Назад",
+  "selectCity": "Выберите город",
+  "selectRoute": "Выберите маршрут",
+  "routeNumber": "Маршрут №{number}",
+  "@routeNumber": {
+    "placeholders": { "number": { "type": "String" } }
+  },
+  "departure": "Отправление",
+  "arrival": "Прибытие",
+  "price": "Стоимость",
+  "priceValue": "{amount} руб.",
+  "@priceValue": {
+    "placeholders": { "amount": { "type": "String" } }
+  },
+  "seats": "Свободных мест",
+  "seatsValue": "{count} мест",
+  "@seatsValue": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "noSeats": "Мест нет",
+  "bookedSuccess": "Билет забронирован!",
+  "bookingCancelled": "Бронирование отменено",
+  "noTickets": "У вас нет забронированных билетов",
+  "ticketFrom": "Из: {city}",
+  "@ticketFrom": {
+    "placeholders": { "city": { "type": "String" } }
+  },
+  "ticketRoute": "Маршрут: {route}",
+  "@ticketRoute": {
+    "placeholders": { "route": { "type": "String" } }
+  },
+  "ticketDate": "Дата: {date}",
+  "@ticketDate": {
+    "placeholders": { "date": { "type": "String" } }
+  },
+  "weatherFor": "Погода в {city}",
+  "@weatherFor": {
+    "placeholders": { "city": { "type": "String" } }
+  },
+  "weatherLoading": "Загрузка погоды...",
+  "weatherError": "Не удалось загрузить погоду",
+  "temperature": "{temp}°C",
+  "@temperature": {
+    "placeholders": { "temp": { "type": "String" } }
+  },
+  "humidity": "Влажность: {value}%",
+  "@humidity": {
+    "placeholders": { "value": { "type": "int" } }
+  },
+  "wind": "Ветер: {speed} м/с",
+  "@wind": {
+    "placeholders": { "speed": { "type": "String" } }
+  },
+  "noRoutesFound": "Маршруты не найдены",
+  "errorOccurred": "Произошла ошибка: {message}",
+  "@errorOccurred": {
+    "placeholders": { "message": { "type": "String" } }
+  },
+  "settings": "Настройки",
+  "language": "Язык",
+  "mapView": "На карте",
+  "listView": "Список",
+  "grodno": "Гродно",
+  "lida": "Лида",
+  "volkovysk": "Волковыск",
+  "slonim": "Слоним",
+  "novogrudok": "Новогрудок",
+  "mosty": "Мосты"
+}

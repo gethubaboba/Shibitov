@@ -1,0 +1,76 @@
+{
+  "@@locale": "ru",
+  "appTitle": "Угадай число",
+  "newGame": "Новая игра",
+  "checkButton": "Проверить",
+  "hintTooHigh": "Слишком большое!",
+  "hintTooLow": "Слишком маленькое!",
+  "hintCorrect": "Поздравляем! Вы угадали!",
+  "hintGameOver": "Игра окончена! Загаданное число: {number}",
+  "@hintGameOver": {
+    "placeholders": {
+      "number": { "type": "int" }
+    }
+  },
+  "attemptsLeft": "Попыток осталось: {count}",
+  "@attemptsLeft": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "attemptsMade": "Попыток сделано: {count}",
+  "@attemptsMade": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "statistics": "Статистика",
+  "statsGamesPlayed": "Сыграно партий: {count}",
+  "@statsGamesPlayed": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "statsWins": "Побед: {count}",
+  "@statsWins": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "statsWinRate": "Процент побед: {rate}%",
+  "@statsWinRate": {
+    "placeholders": {
+      "rate": { "type": "String" }
+    }
+  },
+  "statsBestScore": "Лучший результат: {score} попыток",
+  "@statsBestScore": {
+    "placeholders": {
+      "score": { "type": "int" }
+    }
+  },
+  "statsBestScoreNone": "Лучший результат: —",
+  "resetStats": "Сбросить статистику",
+  "settings": "Настройки",
+  "rangeLabel": "Диапазон чисел",
+  "range1to50": "1 – 50",
+  "range1to100": "1 – 100",
+  "range1to200": "1 – 200",
+  "language": "Язык",
+  "inputHint": "Введите число от {min} до {max}",
+  "@inputHint": {
+    "placeholders": {
+      "min": { "type": "int" },
+      "max": { "type": "int" }
+    }
+  },
+  "invalidInput": "Введите целое число от {min} до {max}",
+  "@invalidInput": {
+    "placeholders": {
+      "min": { "type": "int" },
+      "max": { "type": "int" }
+    }
+  },
+  "guessLabel": "Ваш вариант",
+  "back": "Назад"
+}

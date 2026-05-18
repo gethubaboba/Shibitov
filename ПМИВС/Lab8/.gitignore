@@ -1,0 +1,54 @@
+# Dart/Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+*.g.dart
+*.freezed.dart
+
+# Android
+**/android/.gradle/
+**/android/local.properties
+**/android/key.properties
+**/android/app/google-services.json
+**/android/app/release/
+
+# iOS
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# Web
+lib/generated_plugin_registrant.dart
+
+# macOS
+**/macos/Pods/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test coverage
+coverage/
+lcov.info
+
+# Pub cache
+.pub-cache/
+.pub/
+
+# Generated localization files (keep .arb but not generated .dart)
+lib/l10n/*.dart
+!lib/l10n/app_*.arb

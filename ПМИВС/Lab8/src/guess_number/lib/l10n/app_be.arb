@@ -1,0 +1,76 @@
+{
+  "@@locale": "be",
+  "appTitle": "Адгадай лік",
+  "newGame": "Новая гульня",
+  "checkButton": "Праверыць",
+  "hintTooHigh": "Занадта вялікі!",
+  "hintTooLow": "Занадта малы!",
+  "hintCorrect": "Віншуем! Вы адгадалі!",
+  "hintGameOver": "Гульня скончана! Загаданы лік: {number}",
+  "@hintGameOver": {
+    "placeholders": {
+      "number": { "type": "int" }
+    }
+  },
+  "attemptsLeft": "Спробаў засталося: {count}",
+  "@attemptsLeft": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "attemptsMade": "Спробаў зроблена: {count}",
+  "@attemptsMade": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "statistics": "Статыстыка",
+  "statsGamesPlayed": "Зыграна партый: {count}",
+  "@statsGamesPlayed": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "statsWins": "Перамог: {count}",
+  "@statsWins": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "statsWinRate": "Адсотак перамог: {rate}%",
+  "@statsWinRate": {
+    "placeholders": {
+      "rate": { "type": "String" }
+    }
+  },
+  "statsBestScore": "Лепшы вынік: {score} спробаў",
+  "@statsBestScore": {
+    "placeholders": {
+      "score": { "type": "int" }
+    }
+  },
+  "statsBestScoreNone": "Лепшы вынік: —",
+  "resetStats": "Скінуць статыстыку",
+  "settings": "Налады",
+  "rangeLabel": "Дыяпазон лічбаў",
+  "range1to50": "1 – 50",
+  "range1to100": "1 – 100",
+  "range1to200": "1 – 200",
+  "language": "Мова",
+  "inputHint": "Увядзіце лік ад {min} да {max}",
+  "@inputHint": {
+    "placeholders": {
+      "min": { "type": "int" },
+      "max": { "type": "int" }
+    }
+  },
+  "invalidInput": "Увядзіце цэлы лік ад {min} да {max}",
+  "@invalidInput": {
+    "placeholders": {
+      "min": { "type": "int" },
+      "max": { "type": "int" }
+    }
+  },
+  "guessLabel": "Ваш варыянт",
+  "back": "Назад"
+}

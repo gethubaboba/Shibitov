@@ -1,0 +1,79 @@
+{
+  "@@locale": "be",
+  "appTitle": "Аўтобус Гродна",
+  "cities": "Гарады",
+  "routes": "Маршруты",
+  "myTickets": "Мае білеты",
+  "weather": "Надвор'е",
+  "book": "Забраніраваць",
+  "cancel": "Адмена",
+  "confirm": "Пацвердзіць",
+  "back": "Назад",
+  "selectCity": "Выберыце горад",
+  "selectRoute": "Выберыце маршрут",
+  "routeNumber": "Маршрут №{number}",
+  "@routeNumber": {
+    "placeholders": { "number": { "type": "String" } }
+  },
+  "departure": "Адпраўленне",
+  "arrival": "Прыбыццё",
+  "price": "Кошт",
+  "priceValue": "{amount} руб.",
+  "@priceValue": {
+    "placeholders": { "amount": { "type": "String" } }
+  },
+  "seats": "Вольных месцаў",
+  "seatsValue": "{count} месцаў",
+  "@seatsValue": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "noSeats": "Месцаў няма",
+  "bookedSuccess": "Білет забраніраваны!",
+  "bookingCancelled": "Браніраванне адменена",
+  "noTickets": "У вас няма забраніраваных білетаў",
+  "ticketFrom": "З: {city}",
+  "@ticketFrom": {
+    "placeholders": { "city": { "type": "String" } }
+  },
+  "ticketRoute": "Маршрут: {route}",
+  "@ticketRoute": {
+    "placeholders": { "route": { "type": "String" } }
+  },
+  "ticketDate": "Дата: {date}",
+  "@ticketDate": {
+    "placeholders": { "date": { "type": "String" } }
+  },
+  "weatherFor": "Надвор'е ў {city}",
+  "@weatherFor": {
+    "placeholders": { "city": { "type": "String" } }
+  },
+  "weatherLoading": "Загрузка надвор'я...",
+  "weatherError": "Не ўдалося загрузіць надвор'е",
+  "temperature": "{temp}°C",
+  "@temperature": {
+    "placeholders": { "temp": { "type": "String" } }
+  },
+  "humidity": "Вільготнасць: {value}%",
+  "@humidity": {
+    "placeholders": { "value": { "type": "int" } }
+  },
+  "wind": "Вецер: {speed} м/с",
+  "@wind": {
+    "placeholders": { "speed": { "type": "String" } }
+  },
+  "noRoutesFound": "Маршруты не знойдзены",
+  "errorOccurred": "Адбылася памылка: {message}",
+  "@errorOccurred": {
+    "placeholders": { "message": { "type": "String" } }
+  },
+  "settings": "Налады",
+  "language": "Мова",
+  "mapView": "На карце",
+  "listView": "Спіс",
+  "grodno": "Гродна",
+  "lida": "Ліда",
+  "volkovysk": "Ваўкавыск",
+  "slonim": "Слонім",
+  "novogrudok": "Навагрудак",
+  "mosty": "Масты"
+}

@@ -1,0 +1,36 @@
+name: guess_number
+description: "Игра «Угадай число» — Лабораторная работа №8 по Flutter SDK"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+  provider: ^6.1.2
+  shared_preferences: ^2.3.0
+  animations: ^2.0.11
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  mockito: ^5.4.4
+  build_runner: ^2.4.9
+
+flutter:
+  uses-material-design: true
+  generate: true  # активирует генерацию l10n из ARB-файлов
+
+  # При наличии кастомных шрифтов — добавить сюда
+  # fonts:
+  #   - family: Inter
+  #     fonts:
+  #       - asset: assets/fonts/Inter-Regular.ttf

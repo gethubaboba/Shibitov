@@ -1,0 +1,79 @@
+{
+  "@@locale": "en",
+  "appTitle": "Grodno Bus",
+  "cities": "Cities",
+  "routes": "Routes",
+  "myTickets": "My Tickets",
+  "weather": "Weather",
+  "book": "Book",
+  "cancel": "Cancel",
+  "confirm": "Confirm",
+  "back": "Back",
+  "selectCity": "Select a city",
+  "selectRoute": "Select a route",
+  "routeNumber": "Route #{number}",
+  "@routeNumber": {
+    "placeholders": { "number": { "type": "String" } }
+  },
+  "departure": "Departure",
+  "arrival": "Arrival",
+  "price": "Price",
+  "priceValue": "{amount} BYN",
+  "@priceValue": {
+    "placeholders": { "amount": { "type": "String" } }
+  },
+  "seats": "Available seats",
+  "seatsValue": "{count} seats",
+  "@seatsValue": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "noSeats": "No seats available",
+  "bookedSuccess": "Ticket booked!",
+  "bookingCancelled": "Booking cancelled",
+  "noTickets": "You have no booked tickets",
+  "ticketFrom": "From: {city}",
+  "@ticketFrom": {
+    "placeholders": { "city": { "type": "String" } }
+  },
+  "ticketRoute": "Route: {route}",
+  "@ticketRoute": {
+    "placeholders": { "route": { "type": "String" } }
+  },
+  "ticketDate": "Date: {date}",
+  "@ticketDate": {
+    "placeholders": { "date": { "type": "String" } }
+  },
+  "weatherFor": "Weather in {city}",
+  "@weatherFor": {
+    "placeholders": { "city": { "type": "String" } }
+  },
+  "weatherLoading": "Loading weather...",
+  "weatherError": "Failed to load weather",
+  "temperature": "{temp}°C",
+  "@temperature": {
+    "placeholders": { "temp": { "type": "String" } }
+  },
+  "humidity": "Humidity: {value}%",
+  "@humidity": {
+    "placeholders": { "value": { "type": "int" } }
+  },
+  "wind": "Wind: {speed} m/s",
+  "@wind": {
+    "placeholders": { "speed": { "type": "String" } }
+  },
+  "noRoutesFound": "No routes found",
+  "errorOccurred": "An error occurred: {message}",
+  "@errorOccurred": {
+    "placeholders": { "message": { "type": "String" } }
+  },
+  "settings": "Settings",
+  "language": "Language",
+  "mapView": "Map",
+  "listView": "List",
+  "grodno": "Grodno",
+  "lida": "Lida",
+  "volkovysk": "Volkovysk",
+  "slonim": "Slonim",
+  "novogrudok": "Novogrudok",
+  "mosty": "Mosty"
+}

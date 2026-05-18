@@ -1,0 +1,76 @@
+{
+  "@@locale": "en",
+  "appTitle": "Guess the Number",
+  "newGame": "New Game",
+  "checkButton": "Check",
+  "hintTooHigh": "Too high!",
+  "hintTooLow": "Too low!",
+  "hintCorrect": "Congratulations! You guessed it!",
+  "hintGameOver": "Game over! The number was: {number}",
+  "@hintGameOver": {
+    "placeholders": {
+      "number": { "type": "int" }
+    }
+  },
+  "attemptsLeft": "Attempts left: {count}",
+  "@attemptsLeft": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "attemptsMade": "Attempts made: {count}",
+  "@attemptsMade": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "statistics": "Statistics",
+  "statsGamesPlayed": "Games played: {count}",
+  "@statsGamesPlayed": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "statsWins": "Wins: {count}",
+  "@statsWins": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "statsWinRate": "Win rate: {rate}%",
+  "@statsWinRate": {
+    "placeholders": {
+      "rate": { "type": "String" }
+    }
+  },
+  "statsBestScore": "Best score: {score} attempts",
+  "@statsBestScore": {
+    "placeholders": {
+      "score": { "type": "int" }
+    }
+  },
+  "statsBestScoreNone": "Best score: —",
+  "resetStats": "Reset statistics",
+  "settings": "Settings",
+  "rangeLabel": "Number range",
+  "range1to50": "1 – 50",
+  "range1to100": "1 – 100",
+  "range1to200": "1 – 200",
+  "language": "Language",
+  "inputHint": "Enter a number from {min} to {max}",
+  "@inputHint": {
+    "placeholders": {
+      "min": { "type": "int" },
+      "max": { "type": "int" }
+    }
+  },
+  "invalidInput": "Enter an integer from {min} to {max}",
+  "@invalidInput": {
+    "placeholders": {
+      "min": { "type": "int" },
+      "max": { "type": "int" }
+    }
+  },
+  "guessLabel": "Your guess",
+  "back": "Back"
+}
